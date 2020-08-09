@@ -1,17 +1,16 @@
 
-int totalFrames = 480;
+int totalFrames = 90;
 int counter = 0;
-boolean record = false;
+boolean record = true;
 
-Particle[] particles = new Particle[60];
+Particle[] particles = new Particle[50];
 
 void setup() {
-  size(300, 600);
+  size(300, 500);
+  //colorMode(RGB, 15);
   for (int i = 0; i < particles.length; i++) {
     particles[i] = new Particle();
   }
-  
-  
 }
 
 void draw() {
@@ -32,7 +31,7 @@ void draw() {
 }
 
 void render(float percent) {
-  background(250);
+  background(255);
   float a = percent * TWO_PI;
   for (Particle p : particles) {
     p.render(a); 

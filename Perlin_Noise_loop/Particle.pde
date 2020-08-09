@@ -22,7 +22,7 @@ class Particle {
     float r = rNoise.value(a);
     float b = bNoise.value(a);
     //fill(r, 50, b, 200);
-        fill(25, 64, 77, 230);
+        fill(25, 64, 90, 200);
 
     circle(x, y, d);
   }
